@@ -29,7 +29,7 @@ enum Direction{
 	
 	//방향을 회전시키는 메서드. num의 값만큼 90도씩 시계방향으로 회전한다.
 	public Direction rotate(int num) {
-		num = num % 4;
+		num = num % 4; 
 		
 		if(num < 0) num +=4; //num이 음수일 때는 시계반대 방향으로 회전
 		
