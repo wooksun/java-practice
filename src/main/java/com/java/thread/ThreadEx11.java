@@ -29,6 +29,8 @@ class ThreadEx11_2 extends Thread {
 	
 	public void run() {
 		Map map = getAllStackTraces();
+		//getAllStackTraces()를 이용하면 실행 중 또는 대기상태, 즉 작업이 완료되지 않은 모든 쓰레드의 호출스택을 출력할 수 있다.
+		//[1] [4] [5] [6] [7] [8]이 ture 즉, 실행 중 또는 대기상태에 있다는 것을 알 수 있다.
 		Iterator it = map.keySet().iterator();
 		
 		int x=0;
