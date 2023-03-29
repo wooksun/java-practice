@@ -8,7 +8,9 @@ public class LambdaEx6 {
 		IntConsumer c = i -> System.out.print(i+", ");
 		IntPredicate p = i -> i%2==0;
 		IntUnaryOperator op = i -> i/10*10; //i의 일의 자리를 없앤다.
-//		function f = (a) -> 2*a; --> 에러. a의 타입을 알 수 없으므로 연산불가.
+		
+//		Function f = (a) -> 2*a; --> 에러. a의 타입을 알 수 없으므로 연산불가.
+//		Function<Integer, Integer> f = (a) ->2*a; --> OK. 매개변수 타입과 반환타입이 Integer이기 때문.
 		
 		int[] arr = new int[10];
 		
