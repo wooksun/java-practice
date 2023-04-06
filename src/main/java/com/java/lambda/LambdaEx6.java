@@ -45,6 +45,7 @@ public class LambdaEx6 {
 		
 		return newArr;
 //		커밋연습1
+//		커밋연습2
 	}
 
 }
