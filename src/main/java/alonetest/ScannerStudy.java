@@ -20,8 +20,16 @@ public class ScannerStudy {
 		
 		System.out.println(name+" 님의 점수는 국어:"+kuk+"점, 영어:"+eng+"점, 수학:"+mat+"점 입니다.");
 		int total = kuk+eng+mat;
+//		평균의 소수점까지 나타내려면
+//		double average = total / 3.;
 		
 		System.out.println(name+" 님의 세 과목 평균점수는 " + (total/3) + "점 입니다.");
+		
+//		평균의 소수점까지 나타내려면
+//		System.out.println(name+" 님의 세 과목 평균점수는 " + (total/3.) + "점 입니다.");
+//		System.out.println(name+" 님의 세 과목 평균점수는 " + average + "점 입니다.");
+		
+		
 	}
 
 }
