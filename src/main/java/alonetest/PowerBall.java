@@ -54,7 +54,8 @@ public class PowerBall {
 			power[0] = power[p];
 			power[p] = pow;
 		}
-
+		
+		System.out.println("=====1~60번=====");
 		for (int i = 0; i < lotto.length; i++) {
 			System.out.printf("%2d ", lotto[i]);
 			if ((i + 1) % 10 == 0) {
@@ -62,6 +63,7 @@ public class PowerBall {
 			}
 		}
 
+		System.out.println("=====1~20번=====");
 		for (int i = 0; i < power.length; i++) {
 			System.out.printf("%2d ", power[i]);
 			if ((i + 1) % 10 == 0) {
@@ -72,12 +74,12 @@ public class PowerBall {
 		System.out.println("\n==========1등번호 출력=========");
 
 //		1등 번호를 출력한다. (앞에 6개 1등번호, 7번째 인덱스 보너스)
-		System.out.print("1등 번호: ");
+		System.out.print("1~60번 번호: ");
 		for (int i = 0; i < 5; i++) {
 			System.out.printf("%2d ", lotto[i]);
 
 		}
-		System.out.printf("보너스: %2d ", power[1]);
+		System.out.printf(", 1~20번 번호: %2d ", power[0]);
 
 	}
 
