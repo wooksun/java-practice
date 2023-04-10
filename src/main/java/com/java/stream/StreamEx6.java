@@ -81,3 +81,4 @@ class Student implements Comparable<Student> {
 		return s.totalScore - this.totalScore;
 	}
 }
+
