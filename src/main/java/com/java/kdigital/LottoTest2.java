@@ -28,6 +28,23 @@ public class LottoTest2 {
 				lotto[r] = tmp;
 			}
 			
+//			정렬하는 코드.
+			int[] lottoNum = new int[6];
+			
+			for(int i=0; i<6; i++) {
+				lottoNum[i] = lotto[i];
+			}
+			
+			for (int i = 0; i < 5; i++) { // 선택 위치, 회전수
+				for (int k = i + 1; k < 6; k++) { // 선택 위치의 데이터와 비교할 대상이 되는 데이터 위치
+					if (lottoNum[i] > lottoNum[k]) {
+						int temp = lottoNum[i];
+						lottoNum[i] = lottoNum[k];
+						lottoNum[k] = temp;
+					}
+				}
+			}
+			
 			System.out.printf("%3d GAME: ", j+1);
 			for(int k=0; k<6; k++) {
 				System.out.printf("%2d ", lotto[k]);
