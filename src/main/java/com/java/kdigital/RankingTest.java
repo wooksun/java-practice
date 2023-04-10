@@ -1,4 +1,4 @@
-package k20230410;
+package com.java.kdigital;
 
 import java.util.Arrays;
 
