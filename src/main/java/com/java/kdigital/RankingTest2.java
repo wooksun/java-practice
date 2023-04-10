@@ -27,6 +27,16 @@ public class RankingTest2 {
 
 		for (int i = 0; i < score.length; i++) {
 			System.out.printf("%3d점은 %d등 입니다.\n", score[i], rank[i]);
+			
+//			별점출력 (10점당 별 1개)
+			for(int j=0; j<score[i] / 10; j++) {
+				System.out.print("★");
+			}
+			//내가 짠 코드 if(score[i] % 2 != 0) => if(score[i] % 10 >= 5)와 같은 값이 나옴
+			if(score[i] % 10 >= 5) { 
+				System.out.print("☆");
+			}
+			System.out.println();
 		}
 
 	}
